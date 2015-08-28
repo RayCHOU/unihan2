@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'unihan2'
-  s.version     = '0.0.1'
+  s.version     = '0.0.3'
   s.date        = '2015-08-28'
   s.summary     = "Chinese"
   s.description = "Unihan Database Utilities"
@@ -10,6 +10,6 @@ Gem::Specification.new do |s|
     "lib/unihan2.rb"
   ] + Dir['data/*']
   s.homepage    =
-    'http://rubygems.org/gems/chinese'
+    'https://github.com/RayCHOU/unihan2'
   s.license       = 'MIT'
 end
