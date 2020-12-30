@@ -12,5 +12,5 @@ get strokes of chinese character:
 
 Get Unicode Version by codepoint:
 
-    Unihan2.unicode_version('2A6D7') # 13.0
-    Unihan2.unicode_version(0x2A6D7) # 13.0
+    Unihan2.ver('2A6D7') # 13.0
+    Unihan2.ver(0x2A6D7) # 13.0

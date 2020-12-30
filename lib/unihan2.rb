@@ -18,7 +18,9 @@ class Unihan2
 
   # Listing of Characters Covered by the Unihan Database
   #   https://www.unicode.org/reports/tr38/tr38-29.html#BlockListing
-  def self.unicode_version(code)
+  def self.ver(code)
+    return nil if code.nil?
+
     if code.is_a? Integer
       i = code
     else
