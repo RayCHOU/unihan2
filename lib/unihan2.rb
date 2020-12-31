@@ -23,6 +23,8 @@ class Unihan2
 
     if code.is_a? Integer
       i = code
+    elsif code.size == 1
+      i = code.codepoints.first
     else
       i = code.hex
     end
