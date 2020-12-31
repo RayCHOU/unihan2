@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'unihan2'
-  s.version     = '0.1.2'
+  s.version     = '0.2.0'
   s.date        = '2020-12-31'
   s.summary     = "Chinese"
   s.description = "Unihan Database Utilities"
