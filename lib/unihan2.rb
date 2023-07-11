@@ -8,6 +8,12 @@ class Unihan2
     read_version
   end
 
+  # 將 Unicode XML 轉為 CSV, 內含 code range 的 unicode 版本
+  # @param xml_file_in [String] input unicode xml file path, ex: "ucd.all.flat.xml"
+  # @param csv_file_out [String] csv file path for output
+  def self.chars_ver(xml_file_in, csv_file_out)
+    UnicodeCharsVer.new.convert(xml_file_in, csv_file_out)
+  end
 
   # return total strokes of the character char
   # @param char [String] the character
@@ -17,7 +23,7 @@ class Unihan2
   end
 
   # return unicode version of specific character
-  # @param code [String] character or codepoing
+  # @param code [String] character or codepoint
   # @return [Float] unicode version
   def ver(code)
     return nil if code.nil?
@@ -36,7 +42,7 @@ class Unihan2
   private
 
   def read_strokes
-    fn = File.join(DATA_DIR, 'Unihan_DictionaryLikeData.txt')
+    fn = File.join(DATA_DIR, 'Unihan_IRGSources.txt')
     @strokes = {}
     File.foreach(fn) do |line|
       next if line.start_with? '#'
@@ -78,5 +84,6 @@ class Unihan2
       end
     end
   end
-
 end
+
+require_relative 'unihan2/unicode-chars-ver'

@@ -2,6 +2,10 @@
 
 gem install unihan2
 
+## Unicode version
+
+15.0
+
 ## example
 
 get strokes of chinese character:

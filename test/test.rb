@@ -6,6 +6,10 @@ class Unihan2Test < Minitest::Test
     @u2 = Unihan2.new
   end
 
+  def test_convert_chars_ver
+    Unihan2.chars_ver('temp/ucd.all.flat.xml', 'temp/unicode-chars-ver.csv')
+  end
+
   def test_strokes
     assert_equal 4, @u2.strokes("中")
   end
