@@ -53,7 +53,3 @@ class UnicodeCharsVer
     end
   end 
 end
-
-IN = '../13.0.0/ucd.all.flat.xml'
-OUT = '../out/unicode-chars-ver.csv'
-
