@@ -4,7 +4,7 @@ gem install unihan2
 
 ## Unicode version
 
-15.0
+15.1.0
 
 ## example
 

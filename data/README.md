@@ -1,6 +1,6 @@
 # data
 
-`unicode-chars-ver.csv` comes from "Unicode Character Database in XML" version 15.0.
+`unicode-chars-ver.csv` comes from "Unicode Character Database in XML" version 15.1.0
 
 # 產生 `unicode-chars-ver.csv` 的方法
 

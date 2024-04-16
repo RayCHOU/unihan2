@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'unihan2'
-  s.version     = '1.0.2'
-  s.date        = '2024-03-28'
+  s.version     = '1.1.0'
+  s.date        = '2024-04-16'
   s.summary     = "Chinese"
   s.description = "Unihan Database Utilities"
   s.authors     = ["Ray Chou"]
